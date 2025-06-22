@@ -1,0 +1,16 @@
+{
+  "name": "Bild-zu-PDF Konverter",
+  "short_name": "Image2PDF",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#1d3557",
+  "theme_color": "#4361ee",
+  "description": "Wandle Bilder in PDFs um direkt im Browser!",
+  "icons": [
+    {
+      "src": "icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
