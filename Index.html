@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimativer Bild-zu-PDF Konverter</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --dark: #1d3557;
+            --light: #f8f9fa;
+            --danger: #e63946;
+            --success: #2a9d8f;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1d2b64, #f8cdda);
+            min-height: 100vh;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 800px;
+            padding: 2.5rem;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        header {
+            margin-bottom: 2rem;
+        }
+        
+        h1 {
+            color: var(--dark);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        .subtitle {
+            color: var(--secondary);
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .upload-area {
+            border: 3px dashed var(--primary);
+            border-radius: 15px;
+            padding: 3rem 2rem;
+            margin: 2rem 0;
+            cursor: pointer;
+            transition: var(--transition);
+            background: rgba(67, 97, 238, 0.05);
+        }
+        
+        .upload-area:hover {
+            background: rgba(67, 97, 238, 0.1);
+            transform: translateY(-5px);
+        }
+        
+        .upload-area i {
+            font-size: 4rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+        
+        .upload-area h2 {
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+        
+        .upload-area p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+        
+        .btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-weight: 600;
+            box-shadow: 0 5px 15px rgba(67, 97, 238, 0.4);
+        }
+        
+        .btn:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(67, 97, 238, 0.6);
+        }
+        
+        .btn:active {
+            transform: translateY(1px);
+        }
+        
+        .btn-danger {
+            background: var(--danger);
+            box-shadow: 0 5px 15px rgba(230, 57, 70, 0.4);
+        }
+        
+        .btn-danger:hover {
+            background: #c1121f;
+            box-shadow: 0 8px 20px rgba(230, 57, 70, 0.6);
+        }
+        
+        .btn-success {
+            background: var(--success);
+            box-shadow: 0 5px 15px rgba(42, 157, 143, 0.4);
+        }
+        
+        .btn-success:hover {
+            background: #21867a;
+            box-shadow: 0 8px 20px rgba(42, 157, 143, 0.
